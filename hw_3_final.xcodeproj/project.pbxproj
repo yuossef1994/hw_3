@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D0BB23C29F07029008CB1DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BB23B29F07029008CB1DC /* main.cpp */; };
+		2D0BB24729F07054008CB1DC /* Dv_nozzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BB24229F07053008CB1DC /* Dv_nozzle.cpp */; };
+		2D0BB24829F07054008CB1DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BB24529F07054008CB1DC /* main.cpp */; };
+		2D0BB24929F07054008CB1DC /* nozzle_exact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BB24629F07054008CB1DC /* nozzle_exact.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		2D0BB23829F07029008CB1DC /* hw_3_final */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw_3_final; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D0BB23B29F07029008CB1DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2D0BB24229F07053008CB1DC /* Dv_nozzle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dv_nozzle.cpp; sourceTree = "<group>"; };
+		2D0BB24329F07053008CB1DC /* Dv_nozzle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dv_nozzle.hpp; sourceTree = "<group>"; };
+		2D0BB24429F07053008CB1DC /* nozzle_exact.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nozzle_exact.hpp; sourceTree = "<group>"; };
+		2D0BB24529F07054008CB1DC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2D0BB24629F07054008CB1DC /* nozzle_exact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nozzle_exact.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		2D0BB23A29F07029008CB1DC /* hw_3_final */ = {
 			isa = PBXGroup;
 			children = (
-				2D0BB23B29F07029008CB1DC /* main.cpp */,
+				2D0BB24229F07053008CB1DC /* Dv_nozzle.cpp */,
+				2D0BB24329F07053008CB1DC /* Dv_nozzle.hpp */,
+				2D0BB24529F07054008CB1DC /* main.cpp */,
+				2D0BB24629F07054008CB1DC /* nozzle_exact.cpp */,
+				2D0BB24429F07053008CB1DC /* nozzle_exact.hpp */,
 			);
 			path = hw_3_final;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0BB23C29F07029008CB1DC /* main.cpp in Sources */,
+				2D0BB24929F07054008CB1DC /* nozzle_exact.cpp in Sources */,
+				2D0BB24829F07054008CB1DC /* main.cpp in Sources */,
+				2D0BB24729F07054008CB1DC /* Dv_nozzle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
