@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  homework_2
+//  homework_3
 //
 //  Created by Youssef Z on 2/26/23.
 //
@@ -68,7 +68,7 @@ int main(int argc, const char * argv[]) {
     
     
     
-    int max_iter=10000000;
+    int max_iter=100000000;
     double L2norm;
     Dv_nozzle nozzle;
     nozzle.set_geometry(200, 1, -1);
@@ -77,6 +77,7 @@ int main(int argc, const char * argv[]) {
     nozzle.time_step();
     nozzle.euler_explicit();
     nozzle.rL2initial();
+    nozzle.L2norm(1);
     
     for(int i=1;i<=max_iter;i++)
     {
@@ -88,7 +89,7 @@ int main(int argc, const char * argv[]) {
         L2norm= nozzle.L2norm(i);
         
         
-        std::cout<< " iter number  "<<i <<"  L2 norm is  " <<L2norm<<std::endl;
+       if(i%10==0) std::cout<< " iter number  "<<i <<"  L2 norm is  " <<L2norm<<std::endl;
         
         
         if(L2norm < 1e-8){

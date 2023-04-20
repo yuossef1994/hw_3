@@ -17,7 +17,7 @@ class Dv_nozzle {
     
 private:
     
-    static int const _imax_f=161, _imax_c=160, _imin=0;
+    static int const _imax_f=61, _imax_c=60, _imin=0;
     int im_f, im_c;
     double A, B, C, D, E, F;  // just variables for calculations
     double k_2=0.2, k_4=0.02;
@@ -26,6 +26,7 @@ private:
     double avg_d_area;
     double x_c[_imax_c];
     double delta_t[_imax_c];
+    double delta_t_gl=999;
     double CFL=0.01;
     double area_f[_imax_f];
     double _area, _d_area;
@@ -40,6 +41,7 @@ private:
     double _mach[_imax_c];
     double T[_imax_c];
     double et[_imax_c];
+    double ht[_imax_c];
     double _V[3][_imax_c];
     double _U[3][_imax_c];
     double _F[3][_imax_f];
