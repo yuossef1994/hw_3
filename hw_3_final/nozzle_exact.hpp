@@ -33,7 +33,7 @@ public:
     //constructor to open the file for write
     nozzle_exact(){
         
-        myfile.open("/Users/cringedaddy/CFD class/hw_2/homework_2/homework_2/uexact.csv", std::ios::trunc | std::ios::out);
+        myfile.open("/Users/cringedaddy/CFD class/hw_3_back_up/hw_3/hw_3/hw_3/hw_3_final/hw_3_final/uexact.csv", std::ios::trunc | std::ios::out);
         myfile<<"#########x########   "<<"#########u_exact########"<<std::endl;
     };
     // destructor to close the file

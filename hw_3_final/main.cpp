@@ -88,8 +88,8 @@ int main(int argc, const char * argv[]) {
        
         L2norm= nozzle.L2norm(i);
         
+        if(i%10==0)std::cout<< " iter number  "<<i <<"  L2 norm is  " <<L2norm<<std::endl;
         
-       if(i%10==0) std::cout<< " iter number  "<<i <<"  L2 norm is  " <<L2norm<<std::endl;
         
         
         if(L2norm < 1e-8){

@@ -17,7 +17,7 @@ class Dv_nozzle {
     
 private:
     
-    static int const _imax_f=61, _imax_c=60, _imin=0;
+    static int const _imax_f=161, _imax_c=160, _imin=0;
     int im_f, im_c;
     double A, B, C, D, E, F;  // just variables for calculations
     double k_2=0.2, k_4=0.02;
@@ -47,8 +47,12 @@ private:
     double _F[3][_imax_f];
     double _U_ghost_outflow[3];
     double _V_ghost_outflow[5];
+    double _V_ghost_outflow_2[5];
+    double _V_ghost_outflow_3[5];
     double _U_ghost_inflow[3];
     double _V_ghost_inflow[5];
+    double _V_ghost_inflow_2[5];
+    double _V_ghost_inflow_3[5];
     //upwind schemes variables
     
     double kappa=-1;
@@ -76,8 +80,10 @@ private:
     double T_R;
     double r_plus;
     double r_minus;
-    double epsi_plus[3][_imax_f];
-    double epsi_minus[3][_imax_f];
+    double epsi_plus[3][_imax_f+2];
+    double epsi_minus[3][_imax_f+2];
+    double epsi_minus_ghost[3];
+    double epsi_plus_ghost[3];
     double ht_L;
     double ht_R;
     double mach_knight;
